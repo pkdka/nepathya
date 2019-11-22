@@ -1,0 +1,261 @@
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+
+/* Global */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.dark {
+    padding: 15px;
+    background: #35424a;
+	width:600px;
+	height:400px;
+    color: #ffffff;
+    
+}
+
+
+/* Header */
+
+header {
+    background: #f4f4f4;
+    color: #ffffff;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+.head_container {
+    margin: 0;
+    width: 100%;
+}
+
+header a {
+    color: #0e5732;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding img {
+    text-align: left;
+    padding-left: 0;
+}
+
+header nav {
+    float: left;
+}
+
+header .highlight,
+header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+.button_1 {
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+/** event's decoration**/
+.main_part{
+	position:relative;
+	top:10px;
+	left:120px;
+	/*background-color:#35424a;*/
+	height:60%;
+	width:80%;
+	padding:10px;
+	border-radius:10px;
+	}
+span{
+	padding:10px;
+	color:black;
+	font-weight: bold;
+	font-size:18px;
+	text-transform:uppercase;
+	}
+#event_nav{
+	color:white;
+	font-weight: bold;
+	font-size:24px;
+	text-transform:uppercase;
+	}
+.evnt{
+	color:black;
+	font-weight: bold;
+	font-size:14px;
+	text-transform:uppercase;
+	
+	}
+#part{
+	background-color: #e8491d;
+	height:25%;
+	width:100%;
+	border-radius:10px;
+	}
+.first{
+	float:left;
+	}
+.third{
+	float:left;
+	}
+.second{
+	float:left;
+	}
+#nav4{
+	float:left;
+	height:100%;
+	width:3%;
+}
+/* Review Boxes member photos */
+.containers {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+	
+}
+
+#boxes .box img {
+    width: 200px;
+    height: 175px;
+    border: 1px;
+    border-radius: 30%; /*photo in circle */
+}
+
+
+/* Sidebar */
+aside#sidebar {
+    float: right;
+    
+    margin-top: 10px
+}
+
+aside#sidebar h3 {
+    text-transform: uppercase;
+}
+
+aside#sidebar .contact input,
+aside#sidebar .contact textarea {
+    width: 90%;
+    padding: 5px;
+}
+
+
+/* Main-col */
+
+article#main-col {
+    float: left;
+    width: 100%;
+}
+
+
+/* Services */
+
+#section2{
+	float:right;
+	background-color:white;
+	height:5px;
+	width:600px;
+	}
+#section3{
+	float:right;
+	height:250px;
+	width:600px;
+	padding:15px;
+	background-color:#35424a;
+	border-radius:10px;
+	}
+#section3 a:hover{
+	opacity:0.4;
+}
+/* Footer */
+
+footer {
+	clear:both;
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e84918;
+    text-align: center;
+}
+
+
+/* Media Queries */
+
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    newsletter h1,
+    newsletter form,
+    boxes .box,
+    article#main-col,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header {
+        padding-bottom: 20px;
+    }
+    header #branding img {
+        width: 100%;
+        height: auto;
+    }
+    #showcase h1 {
+        margin-top: 40px;
+    }
+    #newsletter button,
+    .contact button {
+        display: block;
+        width: 100%;
+    }
+    #newsletter form input[type='email'],
+    .contact input,
+    .contact textarea {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
