@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+	<html>
+		<head>
+		<script>
+			function togetfactorial(){
+			var n=document.getElementById("txt1").value;
+			alert(n);
+			if(n<0)
+			alert("invalid number");
+			else{
+			var fact=1;
+			for(var i=1;i<=n;i++)
+			{
+			fact=fact*i;
+			document.getElementById("txt2").value=fact;//alert(fact);
+			}
+			//alert("factorial"+fact);
+			}}
+			
+			
+		</script>
+		</head>
+			<body>
+				<input type="text" id="txt1" placeholder="enter number to find factorial"/>
+				<button onclick="togetfactorial()">calculate</button><br/>
+				<input type="text" id="txt2" />
+			</body>
+	</html>

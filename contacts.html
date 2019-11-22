@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Nepahya | Contacts</title>
+    <link rel="stylesheet" href="./css/style.css">
+<style>
+	#nav{
+		float:left;
+		width:50%;
+		background-color:#35424a;
+		padding:15px;
+		border-radius:10px;
+		}
+	#foot{
+		clear:both;
+		}
+</style>
+<script>
+function callthefunction()
+{
+var name=document.getElementById("Username").value;
+var email=document.getElementById("Useremail").value;
+/*Name validation*/
+if(name=="")  
+{
+alert ("Please enter valid Name");
+return false;
+}
+
+/*Email validation*/
+var regex=/^[A-Za-z0-9\._]+@[a-zA-Z_0-9]+\.[a-zA-Z]{2,4}/; 
+if(regex.test(email)==false)  
+{
+alert ("Please enter valid email");
+return false;
+}
+document.getElementById("formsubmission").innerHTML = "Thankyou for the feedback.We will soon reply you back as soon as possible";
+}
+</script>
+</head>
+
+<body>
+<!--heading section of page-->
+    <header>
+        <div class="container head_container">
+            <div id="branding">
+                <img src="./img/logo.jpg " alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="band_member.html">Band Members</a></li>
+  
+					<li class="current"><a href="contacts.html">Contacts</a></li>
+					<li><a href="albums.html">Albums</a></li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="nep_video.html">Video</a></li>
+					
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!--location of band-->
+<div id="nav">
+<img src="./img/map.jpg" height="50%" width="100%">
+<pre style="font-size:18px;color:white;"><b>NEPA~LAYA
+
+Location:-162/102 Kalika Marg, Kalikasthan,
+	  Kathmandu, Nepal
+	  P.O. Box No. 8975 EPC 1269
+
+Phone:-	977-1-4412395, 977-1-4412469
+
+Mail:-nepathya@nepalaya.com.np</b>
+
+</pre>
+</div>
+<!-- feedback from user-->
+<aside id="sidebar">
+                <div class="dark" style="border-radius:10px">
+                    <h3>Contact Us</h3>
+                 <form method="post" onsubmit="return callthefunction()";>
+			
+			<div style="text-align:center ;font-size:15px;margin:auto; " id="formsubmission">
+			
+			<b></br></br>
+				Full Name:
+				</br>
+				<input type="text" name="Name1" id="Username"></br>
+			
+				Email:</br>
+				<input type="Email" id="Useremail"></br>
+				Your Message:</br>
+				<textarea rows=10 cols=70></textarea></br>
+				<button type="submit"  style="";>Send</button>
+			</b>
+			</div>
+</form>
+                </div>
+            </aside>
+<!--for the link to other side using corresponding symbol and picture-->
+<div id="section2">
+</div>
+<div id="section3">
+<h3 style="color:white">Follow Us On</h3>
+<br/>
+<a href="https://twitter.com/amritnepathya" target="_blank">
+  <img class="logo" src="./img/twitter.png" height="35px">
+</a> 
+<br/><a href="https://www.facebook.com/nepathyaofficial/" target="_blank">
+  <img class="logo" src="./img/facebook.png" height="35px">
+</a> 
+<br><a href="https://www.youtube.com/channel/UChWCNjzWeYbJgWtsI1LelkA/videos" target="_blank">
+  <img class="logo" src="./img/suscribe.png" height="35px">
+</a> 
+<br/><a href="https://www.instagram.com/nepathyaofficial/" target="_blank">
+  <img class="logo" src="./img/insta.png" height="35px">
+</a>
+</div>
+<footer id="foot">
+        <p>Nepathya Band, Copyright &copy; 2018</p>
+    </footer>
+</body>
+</html>

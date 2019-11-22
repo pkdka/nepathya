@@ -1,0 +1,25 @@
+<! doctype html>
+<html>
+<head>
+<title>phone_pattern</title>
+<script>
+	function phonenumber(inputtxt){
+	var phoneno=/^\d{10}$/;
+	if(inputtxt.value.match(phoneno)){
+	return true;
+	}
+	else
+	{
+	alert('wrong');
+	return false;
+	}
+	}
+</script>
+</head>
+<body onload='document.form1.text1.focus()'>
+<form name="form1" action="#">
+Phone Number:<input type="text" id="mail" name="text1" class="mymail">
+<button type="Submit" name="submit" value="submit" onclick="phonenumber(document.form1.text1)"/>Sumbit my number</button>
+</form>
+</head>
+</html>

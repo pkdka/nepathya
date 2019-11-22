@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<title>table</title>
+<style>
+table
+     {
+      width:75%;
+      border:1px solid black;
+      border-collapse:collapse;
+     }
+     th,td
+    {
+     font:bold;
+     text-align:center;
+     text-transform:uppercase;
+     height:50px;
+     border:1px solid black;
+    }  
+
+      </style>
+      </head>
+      <body>
+      <table>
+         <tr>
+          <th>A</th>
+          <th colspan="2">B</th>
+          <th colspan="2">C</th>
+            </tr>
+<tr>	
+	<td></td>
+			<td colspan="2" rowspan="2"></td>
+			<td colspan="2" rowspan="4"></td>
+			</tr>
+			<tr>
+			<td>D</td>
+			</tr>
+			<tr>
+			<td rowspan="4"></td>
+			<td colspan="2">E</td>
+			</tr>
+			<tr>
+			<td colspan="2"><td>
+			</tr>
+			<tr>
+			<td>F</td>
+			<td colspan="2">G</td>
+			<td>H</td>
+			</tr>
+			<tr>
+			<td></td>
+			<td colspan="2"></td>
+			<td></td>
+			</tr>
+			
+            </table>
+            </body>
+            </html>

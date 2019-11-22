@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<title>form_validation</title>
+<script language="Javascript">
+	function validate(){
+	var x=document.getElementById('name').value;
+	var y=document.getElementById('last').value;
+	if((x=="")||(y=="")){
+	alert('Name must be filled');
+	return false;
+	}
+	else {return true;}
+	var a=document.getElementById('phoneno').value;
+	var pat=/^(98|97|96)$/;
+	if(!a.match(pat)){
+	alert('not valid');
+	a.focus;
+	return false;}
+	}
+</script>
+</head>
+<body>
+<form  onsubmit="return validate()" method="post">
+First Name:<input type="text" name="txtfisrt" id="name" class="person" placeholder="First name" size="40"/>
+Last Name:<input type="text" name="txtlast" id="last" placeholder="last name" size="40"/>
+Phone no:<input type="text" name="phone" id="phoneno" placeholder="##"/>
+<button type="submit" value="submit">Submit</button>
+</form>
+</body>
+</html>

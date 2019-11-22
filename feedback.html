@@ -1,0 +1,104 @@
+<! doctype html>
+<html>
+<head>
+<title>alternate</title>
+<style>
+#header{
+	position:relative;
+	top:0px;
+	left:350px;
+	opacity:0.9;
+}
+#nav {
+	background-color:red;
+	text-align:left;
+	font-size:12px;
+	padding:10px;
+	width:750px;
+	opacity:0.9;
+
+}
+#f1 {
+	background-color:green;
+	float:left;
+	text-align:left;
+	font-size:18px;
+	width:100px;
+	height:290px;
+	opacity:0.9;
+
+}
+#f2 {
+	background-color:grey;
+	text-align:left;
+	float:left;
+	height:290px;
+	width:670px;
+	opacity:0.9;
+}
+#f3 {
+	background-color:pink;
+	text-align:center;
+	clear:both;
+	padding:10px;
+	width:750px;
+	opacity:0.9;
+}
+</style>
+<script language="Javascript">
+	<!--validation for name-->
+	function formvalid(){
+	var x=document.getElementById('txtfirst').value;
+	var y=document.getElementById('txtlast').value;
+	if((x=="")||(y=="")){
+	alert('Name must be filled out');
+	return false;
+	}}
+	<!--validation for phone number-->
+	function validph(){
+	var a=document.getElementById('ph1').value;
+	var pat=/^(98|97|96)[0-9]{8}$/;
+	if(!a.match(pat)){
+	alert('invalid number');
+	a.focus;
+	return false;
+	}
+	else
+	return true;
+	}
+	<!--validation for request-->
+	function validreq(){
+	var b=document.getElementById('request').value;
+	if(b==""){
+	alert('Please write Your comment');
+	return false;}
+	else 
+	return true;}
+</script>
+</head>
+<body>
+<div id="header">
+	<div id="nav">
+	<b style="font-size:18px">Leave a Reply</b><br/>
+	<pre style="font-size:16px">Let us know your suggestions, question and concerns</pre>
+	</div>
+	
+	<div id="f1">
+	<br/>Name<br/><br/> Email<br/><br/> Phone<br/><br/>Feedback <br/>
+	</div>
+	
+	<div id="f2">
+	<form method="post" onsubmit="formvalid();validph();validreq()">
+	<br/><input type="text" id="txtfirst" name="name" placeholder="First" size="50"/>
+	<input type="text" id="txtlast" name="lastname" placeholder="last" size="50"/><br/>
+	<br/><input id="text" id="txtmail" name="email" size="50"/><br/>
+	<br/><input type="text" id="ph1" name="phone" placeholder="##########" size="50"/><br/>
+	<br/><textarea  id="request" name="txtrequest" placeholder="Comment" size="50"/></textarea>
+    </div>
+	<div id="f3">
+	<button type="submit" value="submit">Submit</button>
+	</form>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Nepathya | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <header>
+        <div class="container head_container">
+            <div id="branding">
+                <img src="./img/logo.jpg " alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="band_member.html">Band Members</a></li>
+                   
+					<li><a href="contacts.html">Contacts</a></li>
+					<li><a href="albums.html">Albums</a></li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="nep_video.html">Video</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!--images for the slide-->
+		<img class="myslide" src="./img/nep1.jpg" width="100%" height="550px">
+		<img class="myslide" src="./img/nep2.jpg" width="100%"  height="550px">
+		<img class="myslide" src="./img/nep3.jpg" width="100%"  height="550px">
+		<img class="myslide" src="./img/nep4.jpg" width="100%"  height="550px">
+		<img class="myslide" src="./img/nep5.jpg" width="100%"  height="550px">
+		<img class="myslide" src="./img/nep6.jpg" width="100%"  height="550px">
+		<img class="myslide" src="./img/nep7.jpg" width="100%"  height="550px">
+		<img class="myslide" src="./img/nep8.jpg" width="100%"  height="550px">
+		<img class="myslide" src="./img/nep9.jpg" width="100%"  height="550px">
+		<img class="myslide" src="./img/nep10.jpg" width="100%"  height="550px">
+		<img class="myslide" src="./img/nep11.jpg" width="100%"  height="550px">
+		<img class="myslide" src="./img/nep12.jpg" width="100%"  height="550px">
+		<img class="myslide" src="./img/nep13.jpg" width="100%"  height="550px">
+<!--internal frame to display the information about the band-->
+<section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title"></h1>
+                <p>
+                Nepathya (Nepali: नेपथ्य also spelled as Nepathaya) is a Nepalese music band that was formed in the early 1990s by three students from Pokhara while studying in Kathmandu,Nepal.They started recording songs which after years have made them the greatest band ever of Nepal.<br/> Nepathya is best known for blending folk melodies with modern western-influenced rock music.  Nepathya has enjoyed both commercial and critical success. Nepathya is well known for contemporary tunes that have strong ties with indigenous music and songs sung using regional dialects from rural Nepal.
+ Nepathya is one name in Nepali Music- Which has gained consistent popularity and social reconization. During the past 21 years of its existence- Nepathya has been the trendsetters. They have been the poineers to blend folk melodies into youth friendly pop and rock format.Folk melodies have remained the life force of Nepathya. Apart from folk, Nepathya's songs also portray contemporary Nepal- its pain at times of war and distress,and yet the ray of hope an artist sees and imagines of.. Critics address Nepathya as the Most Earthy Nepali Band.   
+                </p>
+</article></div></section>
+ <footer>
+        <p>Nepathya Band, Copyright &copy; 2018</p>
+    </footer>
+</body>
+<script>
+	var slideIndex=0;
+	ShowSlides();
+	function ShowSlides() {
+	var i;
+	var x=document.getElementsByClassName("myslide");
+	for(i=0; i<x.length; i++)
+	{
+	x[i].style.display="none";
+	}
+	slideIndex++;
+	if(slideIndex>x.length)
+	{slideIndex=1}
+	x[slideIndex-1].style.display="block";
+	setTimeout(ShowSlides, 2000);
+	}
+	</script>
+</html>
